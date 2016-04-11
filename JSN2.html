@@ -1,0 +1,53 @@
+<html lang = "en" ng-app="g">
+<head>
+    <title>Jogo da Forca</title>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Jogo da Memoria</title>
+    <link style href="jogoM.css" media="screen" title="no title" rel="stylesheet"></link>
+	  <link href="css/bootstrap.min.css" rel="stylesheet"></link>
+</head>
+<body>
+
+			<center><h1>Jogo da Memória</h1></center>
+		<center>Criado por Thiago Ribeiro Silva ADS 2016 -1</center>
+
+
+    <div class = "container" ng-controller = "memoria">
+
+			<center>{{conectar()}}...</center>
+      <center><h2> Level 2 </h2></center>
+      </br></br></br>
+      <estilo>
+     	<div class="col-xs-3 estilo" ng-click = "jogar(0)">  <img src="{{carta[0]}}" style ="height: 130px" class = "center-block"> </div>
+      <div class="col-xs-3 estilo" ng-click = "jogar(1)">  <img src="{{carta[1]}}" style ="height: 130px" class = "center-block"> </div>
+      <div class="col-xs-3 estilo" ng-click = "jogar(2)">  <img src="{{carta[2]}}" style ="height: 130px" class = "center-block"> </div>
+      <div class="col-xs-3 estilo" ng-click = "jogar(3)">  <img src="{{carta[3]}}" style ="height: 130px" class = "center-block"> </div>
+      <div class="col-xs-3 estilo" ng-click = "jogar(4)">  <img src="{{carta[4]}}" style ="height: 130px" class = "center-block"> </div>
+      <div class="col-xs-3 estilo" ng-click = "jogar(5)">  <img src="{{carta[5]}}" style ="height: 130px" class = "center-block"> </div>
+      <div class="col-xs-3 estilo" ng-click = "jogar(6)">  <img src="{{carta[6]}}" style ="height: 130px" class = "center-block"> </div>
+      <div class="col-xs-3 estilo" ng-click = "jogar(7)">  <img src="{{carta[7]}}" style ="height: 130px" class = "center-block"> </div>
+
+      </estilo>
+
+    </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+    <center>Você tem {{acerto}} acertos</center>
+    <center>Você tem {{erros}} erros</center>
+    </br></br>
+    <center><h1>{{msg}}</h1></center>
+    <button ng-click = 'alerta()'> Jogar... </button>
+
+    </div>
+
+
+
+
+    <script src="jquery/jquery-1.12.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  	<script src="angular/angular.min.js"></script>
+  	<script src="JSN2.js" charset="utf-8"></script>
+
+  </body>
+  </html>
